@@ -1,0 +1,3 @@
+# Backend Schema
+
+The canonical MySQL/MariaDB schema is `database/schema.sql`. Core relations: users reference roles; athlete profiles and team memberships reference users; teams reference sports and coaches; cases reference athlete and optional clinician; reviews, milestones, appointments, clearances, participation reviews, and DSS evaluations reference cases; evaluation details reference evaluations; audit events reference an optional actor. `dss_rules` provide versioned rule identifiers. Document metadata stores a private path reference; file storage endpoints are not yet implemented. Foreign keys and unique constraints cover identity and membership basics.
